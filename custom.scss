@@ -1,0 +1,378 @@
+@import url("https://fonts.cdnfonts.com/css/old-london");
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Meera+Inimai&display=swap");
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/variables";
+@import "./node_modules/bootstrap/scss/maps";
+@import "./node_modules/bootstrap/scss/mixins";
+@import "./node_modules/bootstrap/scss/utilities";
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "font-size":
+      map-merge(
+        map-get($utilities, "font-size"),
+        (
+          responsive: true,
+          values: (
+            1: calc(1.375rem + 1.5vw),
+            2: calc(1.25rem + 0.9vw),
+            3: calc(1.3rem + 0.6vw),
+            4: calc(1.275rem + 0.3vw),
+            5: 1.25rem,
+            6: 1rem,
+            7: 0.8rem,
+            8: 0.6rem,
+            9: 0.5rem,
+            10: 0.4rem,
+          ),
+        )
+      ),
+  )
+);
+
+@import "./node_modules/bootstrap/scss/utilities/api";
+$primary-bg-color: #1c1a19;
+$primary-font: "Crete Round", serif;
+$secondery-font: "Inter", san-serif;
+$title-color: #f55800;
+$primary-font-color: #fff;
+$secondery-font-color: #091e42;
+
+button:hover {
+  background-color: #fff5e1 !important;
+  color: #f55800 !important;
+  border: 1px solid #f55800 !important;
+}
+
+button:focus {
+  border: none !important;
+  color: #f4f1f0 !important;
+  background-color: #e05304 !important;
+}
+
+button:disabled,
+button[disabled] {
+  border: none !important;
+  background-color: #f4f1f0 !important;
+  color: #5b5957 !important;
+}
+
+.nav-custom {
+  background-color: #3c3a39;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+
+  .nav-link {
+    font-family: $secondery-font;
+    color: $primary-font-color;
+  }
+
+  .border-bottom {
+    border-bottom-color: #6f6c6b !important;
+  }
+
+  button {
+    border: none;
+  }
+}
+
+.navbar-brand {
+  font-family: "Old London", sans-serif;
+  font-family: "Old London Alternate", sans-serif;
+  color: #fff;
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+.nav-custom .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar {
+  --bs-navbar-toggler-focus-width: 0;
+}
+
+.hero {
+  background-color: $primary-bg-color;
+  background-image: url("./assets/hero-bg-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: 100% 125%;
+  color: $primary-font-color;
+
+  .hero-content {
+    padding: 39% 0;
+
+    h1 {
+      font-family: $primary-font;
+      font-size: 2.5rem;
+      color: $title-color;
+    }
+
+    h2 {
+      font-family: Roboto, sans-serif;
+      font-size: 1.3rem;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    a {
+      color: #fff;
+    }
+  }
+}
+
+.portfolio {
+  h1 {
+    font-family: $primary-font;
+    color: #1c1a19;
+    font-size: 2.6rem;
+    font-weight: 400;
+  }
+
+  hr {
+    width: 100%;
+    background: #212121 !important;
+    height: 1px;
+  }
+
+  .portfolio-title {
+    width: 90%;
+  }
+}
+
+.main-project {
+  h2 {
+    font-family: $primary-font;
+    color: #091e42;
+  }
+
+  p {
+    font-family: $secondery-font;
+    color: #091e42;
+  }
+
+  .img-placeholder {
+    background: #f28729;
+    text-align: center;
+
+    img {
+      width: 85%;
+      box-shadow: 3px 3px 20px 1px #202020;
+    }
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  button {
+    font-family: $secondery-font;
+    font-weight: 700;
+    color: #fff;
+    background-color: #ff6b00;
+  }
+}
+
+.card {
+  position: unset !important;
+
+  ul {
+    list-style: none;
+  }
+
+  button {
+    font-family: $secondery-font;
+    font-weight: 700;
+    color: #fff;
+    background-color: #ff6b00;
+  }
+
+  .card-body {
+    box-shadow: inset -100vw -100vh rgb(50 50 50 / 0.942);
+    transition: all 1s;
+
+    .card-title {
+      font-family: $primary-font;
+    }
+
+    .card-text,
+    li {
+      font-family: $secondery-font;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 5;
+      -webkit-box-orient: vertical;
+    }
+
+    .card-title,
+    .card-text,
+    li {
+      color: $primary-font-color;
+    }
+
+    li {
+      background-color: rgba(255 255 255 / 24%);
+    }
+
+    &:hover {
+      box-shadow: none;
+
+      .card-title,
+      .card-text,
+      ul {
+        visibility: hidden;
+      }
+    }
+  }
+}
+
+.about-me {
+  background-color: $primary-bg-color;
+
+  h1 {
+    font-family: $primary-font;
+    font-size: 4.4rem;
+    color: $title-color;
+  }
+
+  p {
+    color: #fff;
+  }
+
+  button {
+    font-family: $secondery-font;
+    font-weight: 700;
+    color: #fff;
+    background-color: #ff6b00;
+  }
+
+  li {
+    list-style: none;
+    font-family: $secondery-font;
+    color: $primary-font-color;
+  }
+
+  .about-me-container {
+    background-image: url("./assets/about-mobile-bg.svg");
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    padding: 20% 5% 45%;
+  }
+}
+
+.stack-skills {
+  font-family: "Meera Inimai", sans-serif;
+  color: $primary-font-color;
+  padding: 0;
+  padding-bottom: 5em !important;
+  list-style: square;
+
+  ul {
+    padding: 0%;
+  }
+
+  .language::before {
+    content: " ";
+    display: block;
+    background-color: #ff6b00;
+    height: 0.5em;
+    width: 0.5em;
+    position: relative;
+    transform: rotate(45deg);
+    top: 0.9em;
+    right: 2.6em;
+  }
+
+  .framework::before {
+    content: " ";
+    display: block;
+    background-color: #ff6b00;
+    height: 0.5em;
+    width: 0.5em;
+    position: relative;
+    top: 0.9em;
+    right: 2.9em;
+  }
+
+  .skills::before {
+    content: " ";
+    display: block;
+    background-color: #ff6b00;
+    height: 0.5em;
+    width: 0.5em;
+    position: relative;
+    border-radius: 50%;
+    top: 0.9em;
+    right: 1.5em;
+  }
+}
+
+.contact {
+  h2 {
+    font-size: 2em;
+    font-family: $secondery-font;
+    color: #172b4d;
+  }
+
+  input,
+  textarea {
+    text-indent: 0.5em;
+  }
+
+  textarea {
+    resize: none;
+    background-color: #fbf8f7;
+    color: #3c3a39;
+    font-family: $secondery-font;
+  }
+
+  button {
+    font-family: $secondery-font;
+    font-weight: 700;
+    color: #fff;
+    background-color: #ff6b00;
+  }
+
+  footer {
+    hr {
+      color: #dfe1e6;
+      opacity: 1;
+    }
+    ul {
+      list-style: none;
+    }
+    a {
+      color: #505f79;
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .hero .hero-content {
+    padding: 22% 0;
+    width: 90%;
+  }
+
+  .about-me {
+    h1 {
+      font-size: 5.4rem;
+    }
+    .about-me-container {
+      padding: 10% 8% 27%;
+    }
+  }
+}
+// @media (min-width: 992px) {
+//   .nav-custom a {
+//     border-bottom: none !important;
+//   }
+// }
