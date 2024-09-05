@@ -81,8 +81,8 @@ for (let i = 0; i < projectsCards.length; i++) {
     (stack) =>
       (stackString = `${stackString}<li class="p-2 fs-7 fs-md-6">${stack}</li>`)
   );
-  cardsContainer.innerHTML += `<div class="card col-10 col-sm-9 col-md-5 col-lg-3">
-          <div class="card-body d-flex flex-column px-4 gap-3 gap-md-2 pt-7 pt-md-5" style="${projectsCards[i].cardbackgroundstyle}">
+  cardsContainer.innerHTML += `<div class="card col-10 col-sm-9 col-md-5 column-large">
+          <div class="card-body d-flex flex-column px-4 px-lg-3 gap-3 gap-md-2 pt-7 pt-md-5 pt-lg-7" style="${projectsCards[i].cardbackgroundstyle}">
             <h5 class="card-title fs-1">${projectsCards[i].cardTitle}</h5>
             <p class="card-text fw-light fs-md-5">${projectsCards[i].cardDesc}</p>
             <ul class="d-flex flex-wrap gap-3 gap-lg-2 ps-0 m-0">
