@@ -183,7 +183,7 @@ svg {
   hr {
     width: 100%;
     background: #212121 !important;
-    height: 1px;
+    opacity: 1;
   }
 
   .portfolio-title {
@@ -488,6 +488,36 @@ svg {
 
     .hero-social {
       gap: 1.5rem !important;
+    }
+  }
+
+  .portfolio {
+    .portfolio-title {
+      width: 100%;
+      h1 {
+        font-size: 2.5rem;
+      }
+      hr {
+        width: 65%;
+      }
+    }
+    .main-project {
+      width: 100%;
+    }
+
+    .main-project-details {
+      width: 80%;
+    }
+
+    .column-large {
+      width: 29%;
+    }
+  }
+
+  .about-me {
+    .about-me-container {
+      // background-image: url("./assets/about-me-bg-desktop.svg");
+      // background-position: center right;
     }
   }
 }

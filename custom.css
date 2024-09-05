@@ -4319,7 +4319,7 @@ svg {
 .portfolio hr {
   width: 100%;
   background: #212121 !important;
-  height: 1px;
+  opacity: 1;
 }
 .portfolio .portfolio-title {
   width: 90%;
@@ -4572,6 +4572,24 @@ svg {
   }
   .hero .hero-social {
     gap: 1.5rem !important;
+  }
+  .portfolio .portfolio-title {
+    width: 100%;
+  }
+  .portfolio .portfolio-title h1 {
+    font-size: 2.5rem;
+  }
+  .portfolio .portfolio-title hr {
+    width: 65%;
+  }
+  .portfolio .main-project {
+    width: 100%;
+  }
+  .portfolio .main-project-details {
+    width: 80%;
+  }
+  .portfolio .column-large {
+    width: 29%;
   }
 }
 
