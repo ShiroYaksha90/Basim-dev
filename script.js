@@ -79,15 +79,15 @@ for (let i = 0; i < projectsCards.length; i++) {
   let stackString = "";
   projectsCards[i].cardStack.forEach(
     (stack) =>
-      (stackString = `${stackString}<li class="p-2 fs-7">${stack}</li>`)
+      (stackString = `${stackString}<li class="p-2 fs-7 fs-md-6">${stack}</li>`)
   );
-  cardsContainer.innerHTML += `<div class="card col-9 col-sm-8 col-md-4 col-lg-3">
-          <div class="card-body d-flex flex-column justify-content-end px-3 py-sm-5" style="${projectsCards[i].cardbackgroundstyle}">
+  cardsContainer.innerHTML += `<div class="card col-10 col-sm-9 col-md-5 col-lg-3">
+          <div class="card-body d-flex flex-column px-4 gap-3 gap-md-2 pt-7 pt-md-5" style="${projectsCards[i].cardbackgroundstyle}">
             <h5 class="card-title fs-1">${projectsCards[i].cardTitle}</h5>
-            <p class="card-text fw-light">${projectsCards[i].cardDesc}</p>
-            <ul class="d-flex flex-wrap gap-3 gap-lg-1 ps-0 m-0">
+            <p class="card-text fw-light fs-md-5">${projectsCards[i].cardDesc}</p>
+            <ul class="d-flex flex-wrap gap-3 gap-lg-2 ps-0 m-0">
             ${stackString}
             </ul>
           </div>
-          <button class="border-0 py-2">See Project</button>`;
+          <button class="border-0 p-3">See Project</button>`;
 }
