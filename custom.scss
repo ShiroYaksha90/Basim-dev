@@ -30,6 +30,44 @@ $utilities: map-merge(
           ),
         )
       ),
+    "padding-y":
+      map-merge(
+        map-get($utilities, "padding-y"),
+        (
+          responsive: true,
+          values: (
+            1: 0.25rem,
+            2: 0.5rem,
+            3: 1rem,
+            4: 1.5rem,
+            5: 3rem,
+            6: 4rem,
+            7: 5rem,
+            8: 6rem,
+            9: 7rem,
+            10: 8rem,
+          ),
+        )
+      ),
+    "padding-top":
+      map-merge(
+        map-get($utilities, "padding-top"),
+        (
+          responsive: true,
+          values: (
+            1: 0.25rem,
+            2: 0.5rem,
+            3: 1rem,
+            4: 1.5rem,
+            5: 3rem,
+            6: 4rem,
+            7: 5rem,
+            8: 6rem,
+            9: 7rem,
+            10: 8rem,
+          ),
+        )
+      ),
   )
 );
 
@@ -84,7 +122,8 @@ button[disabled] {
   font-family: "Old London", sans-serif;
   font-family: "Old London Alternate", sans-serif;
   color: #fff;
-
+  padding: 0;
+  margin: 0;
   &:hover {
     color: #fff;
   }
@@ -124,9 +163,13 @@ button[disabled] {
     }
 
     a {
-      color: #fff;
+      color: #cfcfcf;
     }
   }
+}
+
+svg {
+  width: calc(1.25rem + 1vh);
 }
 
 .portfolio {
@@ -179,6 +222,10 @@ button[disabled] {
     color: #fff;
     background-color: #ff6b00;
   }
+
+  li {
+    border-color: #8893a4 !important;
+  }
 }
 
 .card {
@@ -209,7 +256,7 @@ button[disabled] {
       overflow: hidden;
       text-overflow: ellipsis;
       display: -webkit-box;
-      -webkit-line-clamp: 5;
+      -webkit-line-clamp: 7;
       -webkit-box-orient: vertical;
     }
 
@@ -358,8 +405,18 @@ button[disabled] {
 
 @media (min-width: 576px) {
   .hero .hero-content {
-    padding: 22% 0;
+    padding: 24.6% 0;
     width: 90%;
+    h1 {
+      font-size: 3.5rem;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+    }
+    p {
+      font-size: 1rem;
+    }
   }
 
   .about-me {
@@ -371,8 +428,66 @@ button[disabled] {
     }
   }
 }
-// @media (min-width: 992px) {
-//   .nav-custom a {
-//     border-bottom: none !important;
-//   }
-// }
+
+@media (min-width: 768px) {
+  .hero {
+    .hero-content {
+      padding: 21.6% 0;
+    }
+    h1 {
+      font-size: 3.5rem;
+    }
+    .hero-content > div {
+      width: 60% !important;
+    }
+    .hero-social {
+      gap: 2rem !important;
+    }
+  }
+
+  svg {
+    width: calc(1rem + 0.5vw);
+  }
+
+  .portfolio h1 {
+    font-size: 3rem;
+  }
+
+  .main-project {
+    width: 90%;
+  }
+  .about-me {
+    .about-me-container {
+      padding: 15% 30% 8% 5%;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .nav-custom a {
+    border-bottom: none !important;
+  }
+
+  .hero {
+    background-image: url(./assets/hero-bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+
+    .navbar {
+      padding: 0 6%;
+    }
+
+    .hero-content {
+      padding: 20% 25% 25% 0%;
+      margin-left: 2%;
+      gap: 2rem !important;
+      div {
+        max-width: 45% !important;
+      }
+    }
+
+    .hero-social {
+      gap: 1.5rem !important;
+    }
+  }
+}
