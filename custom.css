@@ -4284,11 +4284,11 @@ button[disabled] {
   background-color: #1c1a19;
   background-image: url("./assets/hero-bg-mobile.svg");
   background-repeat: no-repeat;
-  background-position: 100% 125%;
+  background-position: 100% 110%;
   color: #fff;
 }
 .hero .hero-content {
-  padding: 39% 0;
+  padding: 43% 0;
 }
 .hero .hero-content h1 {
   font-family: "Crete Round", serif;
