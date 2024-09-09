@@ -176,7 +176,7 @@ svg {
   h1 {
     font-family: $primary-font;
     color: #1c1a19;
-    font-size: 2.6rem;
+    font-size: 2.5rem;
     font-weight: 400;
   }
 
@@ -205,7 +205,7 @@ svg {
   .img-placeholder {
     background: #f28729;
     text-align: center;
-
+    width: 90%;
     img {
       width: 85%;
       box-shadow: 3px 3px 20px 1px #202020;
@@ -284,6 +284,9 @@ svg {
 
 .about-me {
   background-color: $primary-bg-color;
+  background-image: url("./assets/about-mobile-bg.svg");
+  background-repeat: no-repeat;
+  background-position: 100% 39%;
 
   h1 {
     font-family: $primary-font;
@@ -309,9 +312,6 @@ svg {
   }
 
   .about-me-container {
-    background-image: url("./assets/about-mobile-bg.svg");
-    background-repeat: no-repeat;
-    background-position: 100% 100%;
     padding: 20% 5% 45%;
   }
 }
@@ -420,6 +420,7 @@ svg {
   }
 
   .about-me {
+    background-position: 100% 35%;
     h1 {
       font-size: 5.4rem;
     }
@@ -498,7 +499,7 @@ svg {
         font-size: 2.5rem;
       }
       hr {
-        width: 65%;
+        width: 59%;
       }
     }
     .main-project {
@@ -515,9 +516,57 @@ svg {
   }
 
   .about-me {
+    background-image: url("./assets/about-me-bg-desktop.svg");
+    background-position: 150% 40%;
+  }
+
+  .contact {
+    .contact-content {
+      h2 {
+        width: 50%;
+      }
+      div {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero {
+    .hero-content {
+      padding: 18% 25% 25% 0%;
+      gap: 5rem !important;
+      h1 {
+        font-size: 4.5rem;
+      }
+    }
+  }
+
+  .portfolio {
+    .portfolio-title {
+      hr {
+        width: 66%;
+      }
+    }
+
+    .main-project {
+      .img-placeholder {
+        width: 100%;
+        img {
+          height: 75%;
+        }
+      }
+    }
+  }
+
+  .about-me {
+    background-image: url("./assets/about-me-bg-desktop.svg");
+    background-position: 100% 30%;
     .about-me-container {
-      // background-image: url("./assets/about-me-bg-desktop.svg");
-      // background-position: center right;
+      p {
+        width: 70%;
+      }
     }
   }
 }

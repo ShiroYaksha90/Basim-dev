@@ -4313,7 +4313,7 @@ svg {
 .portfolio h1 {
   font-family: "Crete Round", serif;
   color: #1c1a19;
-  font-size: 2.6rem;
+  font-size: 2.5rem;
   font-weight: 400;
 }
 .portfolio hr {
@@ -4336,6 +4336,7 @@ svg {
 .main-project .img-placeholder {
   background: #f28729;
   text-align: center;
+  width: 90%;
 }
 .main-project .img-placeholder img {
   width: 85%;
@@ -4401,6 +4402,9 @@ svg {
 
 .about-me {
   background-color: #1c1a19;
+  background-image: url("./assets/about-mobile-bg.svg");
+  background-repeat: no-repeat;
+  background-position: 100% 39%;
 }
 .about-me h1 {
   font-family: "Crete Round", serif;
@@ -4422,9 +4426,6 @@ svg {
   color: #fff;
 }
 .about-me .about-me-container {
-  background-image: url("./assets/about-mobile-bg.svg");
-  background-repeat: no-repeat;
-  background-position: 100% 100%;
   padding: 20% 5% 45%;
 }
 
@@ -4517,6 +4518,9 @@ svg {
   .hero .hero-content p {
     font-size: 1rem;
   }
+  .about-me {
+    background-position: 100% 35%;
+  }
   .about-me h1 {
     font-size: 5.4rem;
   }
@@ -4580,7 +4584,7 @@ svg {
     font-size: 2.5rem;
   }
   .portfolio .portfolio-title hr {
-    width: 65%;
+    width: 59%;
   }
   .portfolio .main-project {
     width: 100%;
@@ -4590,6 +4594,41 @@ svg {
   }
   .portfolio .column-large {
     width: 29%;
+  }
+  .about-me {
+    background-image: url("./assets/about-me-bg-desktop.svg");
+    background-position: 150% 40%;
+  }
+  .contact .contact-content h2 {
+    width: 50%;
+  }
+  .contact .contact-content div {
+    width: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  .hero .hero-content {
+    padding: 18% 25% 25% 0%;
+    gap: 5rem !important;
+  }
+  .hero .hero-content h1 {
+    font-size: 4.5rem;
+  }
+  .portfolio .portfolio-title hr {
+    width: 66%;
+  }
+  .portfolio .main-project .img-placeholder {
+    width: 100%;
+  }
+  .portfolio .main-project .img-placeholder img {
+    height: 75%;
+  }
+  .about-me {
+    background-image: url("./assets/about-me-bg-desktop.svg");
+    background-position: 100% 30%;
+  }
+  .about-me .about-me-container p {
+    width: 70%;
   }
 }
 
