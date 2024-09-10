@@ -669,10 +669,6 @@
   margin-bottom: auto !important;
 }
 
-.mt-0 {
-  margin-top: 0 !important;
-}
-
 .mt-1 {
   margin-top: 0.25rem !important;
 }
@@ -693,8 +689,24 @@
   margin-top: 3rem !important;
 }
 
-.mt-auto {
-  margin-top: auto !important;
+.mt-6 {
+  margin-top: 4rem !important;
+}
+
+.mt-7 {
+  margin-top: 5rem !important;
+}
+
+.mt-8 {
+  margin-top: 6rem !important;
+}
+
+.mt-9 {
+  margin-top: 7rem !important;
+}
+
+.mt-10 {
+  margin-top: 8rem !important;
 }
 
 .me-0 {
@@ -1669,9 +1681,6 @@
     margin-top: auto !important;
     margin-bottom: auto !important;
   }
-  .mt-sm-0 {
-    margin-top: 0 !important;
-  }
   .mt-sm-1 {
     margin-top: 0.25rem !important;
   }
@@ -1687,8 +1696,20 @@
   .mt-sm-5 {
     margin-top: 3rem !important;
   }
-  .mt-sm-auto {
-    margin-top: auto !important;
+  .mt-sm-6 {
+    margin-top: 4rem !important;
+  }
+  .mt-sm-7 {
+    margin-top: 5rem !important;
+  }
+  .mt-sm-8 {
+    margin-top: 6rem !important;
+  }
+  .mt-sm-9 {
+    margin-top: 7rem !important;
+  }
+  .mt-sm-10 {
+    margin-top: 8rem !important;
   }
   .me-sm-0 {
     margin-right: 0 !important;
@@ -2223,9 +2244,6 @@
     margin-top: auto !important;
     margin-bottom: auto !important;
   }
-  .mt-md-0 {
-    margin-top: 0 !important;
-  }
   .mt-md-1 {
     margin-top: 0.25rem !important;
   }
@@ -2241,8 +2259,20 @@
   .mt-md-5 {
     margin-top: 3rem !important;
   }
-  .mt-md-auto {
-    margin-top: auto !important;
+  .mt-md-6 {
+    margin-top: 4rem !important;
+  }
+  .mt-md-7 {
+    margin-top: 5rem !important;
+  }
+  .mt-md-8 {
+    margin-top: 6rem !important;
+  }
+  .mt-md-9 {
+    margin-top: 7rem !important;
+  }
+  .mt-md-10 {
+    margin-top: 8rem !important;
   }
   .me-md-0 {
     margin-right: 0 !important;
@@ -2777,9 +2807,6 @@
     margin-top: auto !important;
     margin-bottom: auto !important;
   }
-  .mt-lg-0 {
-    margin-top: 0 !important;
-  }
   .mt-lg-1 {
     margin-top: 0.25rem !important;
   }
@@ -2795,8 +2822,20 @@
   .mt-lg-5 {
     margin-top: 3rem !important;
   }
-  .mt-lg-auto {
-    margin-top: auto !important;
+  .mt-lg-6 {
+    margin-top: 4rem !important;
+  }
+  .mt-lg-7 {
+    margin-top: 5rem !important;
+  }
+  .mt-lg-8 {
+    margin-top: 6rem !important;
+  }
+  .mt-lg-9 {
+    margin-top: 7rem !important;
+  }
+  .mt-lg-10 {
+    margin-top: 8rem !important;
   }
   .me-lg-0 {
     margin-right: 0 !important;
@@ -3331,9 +3370,6 @@
     margin-top: auto !important;
     margin-bottom: auto !important;
   }
-  .mt-xl-0 {
-    margin-top: 0 !important;
-  }
   .mt-xl-1 {
     margin-top: 0.25rem !important;
   }
@@ -3349,8 +3385,20 @@
   .mt-xl-5 {
     margin-top: 3rem !important;
   }
-  .mt-xl-auto {
-    margin-top: auto !important;
+  .mt-xl-6 {
+    margin-top: 4rem !important;
+  }
+  .mt-xl-7 {
+    margin-top: 5rem !important;
+  }
+  .mt-xl-8 {
+    margin-top: 6rem !important;
+  }
+  .mt-xl-9 {
+    margin-top: 7rem !important;
+  }
+  .mt-xl-10 {
+    margin-top: 8rem !important;
   }
   .me-xl-0 {
     margin-right: 0 !important;
@@ -3885,9 +3933,6 @@
     margin-top: auto !important;
     margin-bottom: auto !important;
   }
-  .mt-xxl-0 {
-    margin-top: 0 !important;
-  }
   .mt-xxl-1 {
     margin-top: 0.25rem !important;
   }
@@ -3903,8 +3948,20 @@
   .mt-xxl-5 {
     margin-top: 3rem !important;
   }
-  .mt-xxl-auto {
-    margin-top: auto !important;
+  .mt-xxl-6 {
+    margin-top: 4rem !important;
+  }
+  .mt-xxl-7 {
+    margin-top: 5rem !important;
+  }
+  .mt-xxl-8 {
+    margin-top: 6rem !important;
+  }
+  .mt-xxl-9 {
+    margin-top: 7rem !important;
+  }
+  .mt-xxl-10 {
+    margin-top: 8rem !important;
   }
   .me-xxl-0 {
     margin-right: 0 !important;
@@ -4400,6 +4457,37 @@ svg {
   visibility: hidden;
 }
 
+.modal-dialog {
+  max-width: unset;
+  width: 95%;
+  height: 98%;
+}
+.modal-dialog .modal-content .modal-header {
+  border-bottom: none;
+}
+.modal-dialog .modal-content .modal-body {
+  overflow-y: auto;
+}
+.modal-dialog .modal-content .modal-body .main-project {
+  height: 100%;
+}
+.modal-dialog .modal-content .modal-body .main-project .modal-details {
+  height: 100%;
+}
+.modal-dialog .modal-content .modal-body .main-project .modal-details img {
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+}
+.modal-dialog .modal-content .modal-btn {
+  font-family: "Inter", san-serif;
+  font-weight: 700;
+  color: #fff;
+  background-color: #ff6b00;
+}
+.modal-dialog .modal-content .modal-btn a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .about-me {
   background-color: #1c1a19;
   background-image: url("./assets/about-mobile-bg.svg");
@@ -4550,6 +4638,10 @@ svg {
   .main-project {
     width: 90%;
   }
+  .main-project .modal-details img {
+    width: 85%;
+    align-self: center;
+  }
   .about-me .about-me-container {
     padding: 15% 30% 8% 5%;
   }
@@ -4627,8 +4719,15 @@ svg {
     background-image: url("./assets/about-me-bg-desktop.svg");
     background-position: 100% 30%;
   }
+  .about-me .about-me-container {
+    padding: 7% 5%;
+  }
   .about-me .about-me-container p {
     width: 70%;
+  }
+  .contact h2 {
+    width: 45%;
+    font-size: 2.5em;
   }
 }
 
