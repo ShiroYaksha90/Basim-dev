@@ -89,5 +89,12 @@ for (let i = 0; i < projectsCards.length; i++) {
             ${stackString}
             </ul>
           </div>
-          <button class="border-0 p-3">See Project</button>`;
+          <button class="border-0 p-3" data-bs-toggle="modal" data-bs-target="#exampleModal" >See Project</button>`;
 }
+
+const myModal = document.getElementById("myModal");
+const myInput = document.getElementById("myInput");
+
+myModal.addEventListener("shown.bs.modal", () => {
+  myInput.focus();
+});
