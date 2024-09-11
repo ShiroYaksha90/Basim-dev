@@ -137,3 +137,63 @@ projectsCards.forEach((card) => {
     </div>
   </div>`;
 });
+
+/* Form Validation */
+const formVar = document.getElementById("form");
+const nameVar = document.getElementById("name");
+const emailVar = document.getElementById("email");
+const messageVar = document.getElementById("message");
+const errorMessage = document.getElementById("email-error");
+
+const validateEmail = (email) => {
+  const reqularExpression =
+    /^([a-z0-9.-]+)+@([a-z0-9-]+).([a-z]{2,8})(.[a-z]{2,8})?$/;
+  return reqularExpression.test(email);
+};
+
+form.addEventListener("submit", (e) => {
+  if (!validateEmail(emailVar.value)) {
+    e.preventDefault();
+    errorMessage.textContent = "Please enter a valid email";
+  } else errorMessage.textContent = "";
+});
+
+/* localstorage */
+
+window.addEventListener("DOMContentLoaded", () => {
+  const userInput = JSON.parse(localStorage.getItem("data"));
+  if (userInput !== null) {
+    nameVar.value = userInput.nameId;
+    emailVar.value = userInput.mail;
+    messageVar.value = userInput.message;
+  } else {
+    nameVar.value = "";
+    emailVar.value = "";
+    messageVar.value = "";
+  }
+});
+
+form.addEventListener("input", () => {
+  const obj = {};
+  obj.name = nameVar.value;
+  obj.mail = emailVar.value;
+  obj.message = messageVar.value;
+  localStorage.setItem("data", JSON.stringify(obj));
+});
+
+// rest form input
+const clearInput = () => {
+  nameVar.value = "";
+  emailVar.value = "";
+  messageVar.value = "";
+};
+
+window.addEventListener("DOMContentLoaded", () => {
+  clearInput();
+});
+
+//download resume
+const downloadResume = document.querySelector(".download-resume");
+downloadResume.addEventListener("click", () => {
+  window.open("assets/Basim_Aljazaeri_resume.pdf");
+});
