@@ -139,7 +139,7 @@
           collaborative environments and am eager to learn new technologies. Remote work feels natural, 
           and I prioritize clear communication ensure that everyone stays connected and in the loop. 
           Outside of coding, I enjoy watching movies, TV showes and play video games</p>
-        <button class="border-0 col-6 col-sm-5 col-lg-3 py-2">Get My Resume</button>
+        <button class="download-resume border-0 col-6 col-sm-5 col-lg-3 py-2">Get My Resume</button>
       </div>
       <hr class="mx-3 mx-lg-5 my-5 text-white opacity-100">
       <ul class="stack-skills d-flex flex-column flex-lg-row justify-content-lg-around m-0 py-5 py-sm-3">
@@ -171,16 +171,18 @@
       <div class="contact-content d-flex flex-column flex-lg-row gap-lg-4 pt-lg-7 px-lg-5">
         <h2 class="text-center pb-5 pt-9 px-4 px-md-5 mx-sm-5 p-lg-0 m-lg-0 fw-bold">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
         <div class="form-container d-flex flex-column px-3 px-sm-5 px-lg-0">
-          <input type="text" placeholder="Full name" class="border-0 border-bottom px-2">
-          <input                 type="email"
-          id="email"
-          size="30"
-          required placeholder="Email" class="border-0 border-bottom p-2">
-          <textarea name="" id="" placeholder="Write me something" class="border-0 fst-italic mt-3 px-2 py-3"               name="text-area"
-          required
-          spellcheck="false"
-          maxlength="500" autocomplete="off"></textarea>
-          <button class="col-md-5 col-lg-6 col-xl-4 fs-lg-5 fs-md-4 border-0 mt-2 px-4 py-2 align-self-center align-self-lg-start">Get in touch</button>
+          <form action="https://formspree.io/f/mzbwkbey" method="post" id="form">
+            <span id="email-error" class="text-danger"></span>
+            <input type="text" placeholder="Full name" id="name" class="form-control border-0 border-bottom mb-1 px-2">
+            <input                 type="email"
+            id="email"
+            size="30"
+            required placeholder="Email" class="form-control border-0 border-bottom p-2">
+            <textarea name="message" id="message" placeholder="Write me something" class="form-control border-0 fst-italic mt-3 px-2 py-3"               name="text-area"
+            required
+            spellcheck="false"
+            maxlength="500" autocomplete="off"></textarea>
+            <button type="submit" class="col-md-5 col-lg-6 col-xl-4 fs-lg-5 fs-md-4 border-0 mt-2 px-4 py-2 align-self-center align-self-lg-start">Get in touch</button></form>
         </div>
       </div>
     <footer class="mt-5">
