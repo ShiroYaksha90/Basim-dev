@@ -146,6 +146,10 @@ button[disabled] {
   &:hover {
     color: #fff;
   }
+  &:focus {
+    opacity: 0.5;
+    color: #fff;
+  }
 }
 
 .nav-custom .navbar-toggler-icon {
@@ -587,7 +591,7 @@ svg {
     }
 
     .column-large {
-      width: 29%;
+      width: 31%;
     }
 
     .modal-content {
@@ -611,10 +615,10 @@ svg {
   .contact {
     .contact-content {
       h2 {
-        width: 50%;
+        width: 40%;
       }
       div {
-        width: 50%;
+        width: 60%;
       }
     }
   }
@@ -623,7 +627,7 @@ svg {
 @media (min-width: 1200px) {
   .hero {
     .hero-content {
-      padding: 18% 25% 25% 0%;
+      padding: 10% 25% 20% 0%;
       gap: 5rem !important;
       h1 {
         font-size: 4.5rem;
@@ -666,14 +670,14 @@ svg {
     .about-me-container {
       padding: 7% 5%;
       p {
-        width: 70%;
+        max-width: 55%;
       }
     }
   }
 
   .contact {
     h2 {
-      width: 45%;
+      max-width: 40%;
       font-size: 2.5em;
     }
   }

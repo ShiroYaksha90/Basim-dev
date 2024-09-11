@@ -4328,6 +4328,10 @@ button[disabled] {
 .navbar-brand:hover {
   color: #fff;
 }
+.navbar-brand:focus {
+  opacity: 0.5;
+  color: #fff;
+}
 
 .nav-custom .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
@@ -4695,7 +4699,7 @@ svg {
     width: 80%;
   }
   .portfolio .column-large {
-    width: 29%;
+    width: 31%;
   }
   .portfolio .modal-content {
     height: 90%;
@@ -4713,15 +4717,15 @@ svg {
     background-position: 150% 40%;
   }
   .contact .contact-content h2 {
-    width: 50%;
+    width: 40%;
   }
   .contact .contact-content div {
-    width: 50%;
+    width: 60%;
   }
 }
 @media (min-width: 1200px) {
   .hero .hero-content {
-    padding: 18% 25% 25% 0%;
+    padding: 10% 25% 20% 0%;
     gap: 5rem !important;
   }
   .hero .hero-content h1 {
@@ -4751,10 +4755,10 @@ svg {
     padding: 7% 5%;
   }
   .about-me .about-me-container p {
-    width: 70%;
+    max-width: 55%;
   }
   .contact h2 {
-    width: 45%;
+    max-width: 40%;
     font-size: 2.5em;
   }
 }
