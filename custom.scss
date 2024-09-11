@@ -314,13 +314,18 @@ svg {
       overflow-y: auto;
       .main-project {
         height: 100%;
-        .modal-details {
+        .modal-details-container {
           height: 100%;
         }
 
         .modal-details {
+          height: 100%;
+        }
+
+        .modal-details-container {
           img {
             box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+            height: 65%;
           }
         }
       }
@@ -477,6 +482,12 @@ svg {
     }
   }
 
+  .modal-details-container {
+    img {
+      height: 70% !important;
+    }
+  }
+
   .about-me {
     background-position: 100% 35%;
     h1 {
@@ -514,10 +525,11 @@ svg {
 
   .main-project {
     width: 90%;
-    .modal-details {
+    .modal-details-container {
+      height: 100% !important;
       img {
-        width: 85%;
-        align-self: center;
+        width: 100%;
+        height: 100% !important;
       }
     }
   }
@@ -577,6 +589,18 @@ svg {
     .column-large {
       width: 29%;
     }
+
+    .modal-content {
+      height: 90%;
+      .modal-details-container {
+        height: 85% !important;
+        img {
+          width: 65%;
+          height: 100% !important;
+          align-self: unset;
+        }
+      }
+    }
   }
 
   .about-me {
@@ -619,6 +643,18 @@ svg {
         width: 100%;
         img {
           height: 75%;
+        }
+      }
+    }
+
+    .modal-content {
+      .modal-details-container {
+        img {
+          width: 70%;
+          align-self: unset;
+        }
+        .modal-details {
+          width: 45%;
         }
       }
     }

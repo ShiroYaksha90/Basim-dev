@@ -4471,11 +4471,15 @@ svg {
 .modal-dialog .modal-content .modal-body .main-project {
   height: 100%;
 }
+.modal-dialog .modal-content .modal-body .main-project .modal-details-container {
+  height: 100%;
+}
 .modal-dialog .modal-content .modal-body .main-project .modal-details {
   height: 100%;
 }
-.modal-dialog .modal-content .modal-body .main-project .modal-details img {
+.modal-dialog .modal-content .modal-body .main-project .modal-details-container img {
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+  height: 65%;
 }
 .modal-dialog .modal-content .modal-btn {
   font-family: "Inter", san-serif;
@@ -4606,6 +4610,9 @@ svg {
   .hero .hero-content p {
     font-size: 1rem;
   }
+  .modal-details-container img {
+    height: 70% !important;
+  }
   .about-me {
     background-position: 100% 35%;
   }
@@ -4638,9 +4645,12 @@ svg {
   .main-project {
     width: 90%;
   }
-  .main-project .modal-details img {
-    width: 85%;
-    align-self: center;
+  .main-project .modal-details-container {
+    height: 100% !important;
+  }
+  .main-project .modal-details-container img {
+    width: 100%;
+    height: 100% !important;
   }
   .about-me .about-me-container {
     padding: 15% 30% 8% 5%;
@@ -4687,6 +4697,17 @@ svg {
   .portfolio .column-large {
     width: 29%;
   }
+  .portfolio .modal-content {
+    height: 90%;
+  }
+  .portfolio .modal-content .modal-details-container {
+    height: 85% !important;
+  }
+  .portfolio .modal-content .modal-details-container img {
+    width: 65%;
+    height: 100% !important;
+    align-self: unset;
+  }
   .about-me {
     background-image: url("./assets/about-me-bg-desktop.svg");
     background-position: 150% 40%;
@@ -4714,6 +4735,13 @@ svg {
   }
   .portfolio .main-project .img-placeholder img {
     height: 75%;
+  }
+  .portfolio .modal-content .modal-details-container img {
+    width: 70%;
+    align-self: unset;
+  }
+  .portfolio .modal-content .modal-details-container .modal-details {
+    width: 45%;
   }
   .about-me {
     background-image: url("./assets/about-me-bg-desktop.svg");
