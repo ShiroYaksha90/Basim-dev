@@ -83,7 +83,7 @@ for (let i = 0; i < projectsCards.length; i++) {
   );
   cardsContainer.innerHTML += `<div class="card col-10 col-sm-9 col-md-5 column-large">
           <div class="card-body d-flex flex-column px-4 px-lg-3 gap-3 gap-md-2 pt-7 pt-md-5 pt-lg-7" style="${projectsCards[i].cardbackgroundstyle}">
-            <h5 class="card-title fs-1">${projectsCards[i].cardTitle}</h5>
+            <h3 class="card-title fs-1">${projectsCards[i].cardTitle}</h3>
             <p class="card-text fw-light fs-md-5">${projectsCards[i].cardDesc}</p>
             <ul class="d-flex flex-wrap gap-3 gap-lg-2 ps-0 m-0">
             ${stackString}
@@ -101,11 +101,11 @@ projectsCards.forEach((card) => {
       (stackString = `${stackString}<li class="border p-1">${stack}</li>`)
   );
   cardModal.innerHTML += `
-  <div class="modal fade" id="card-${card.cardId}" tabindex="-1" aria-labelledby="card-${card.id}ModalLabel" aria-hidden="true">
+  <div class="modal fade" id="card-${card.cardId}" tabindex="-1" aria-labelledby="card-${card.cardId}ModalLabel" aria-hidden="true">
     <div class="modal-dialog d-flex">
       <div class="modal-content align-self-lg-center">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="mainProjectModalLabel">${card.cardTitle}</h1>
+          <h1 class="modal-title fs-5" id="card-${card.cardId}">${card.cardTitle}</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -114,7 +114,7 @@ projectsCards.forEach((card) => {
             ${stackString}
             </ul>
             <div class="modal-details-container d-flex flex-column flex-lg-row gap-lg-3">
-              <img src="${card.cardImage}" alt="${card.cardTitle}">
+              <img src="${card.cardImage}" alt="${card.cardTitle}" loading="lazy">
   
               <div class="modal-details d-flex flex-column justify-content-between my-3 my-lg-0">
                 <div class="main-project-details d-flex flex-column align-items-start m-lg-0 gap-lg-3">
