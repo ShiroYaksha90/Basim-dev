@@ -2,95 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Meera+Inimai&display=swap");
-@import "./node_modules/bootstrap/scss/functions";
-@import "./node_modules/bootstrap/scss/variables";
-@import "./node_modules/bootstrap/scss/maps";
-@import "./node_modules/bootstrap/scss/mixins";
-@import "./node_modules/bootstrap/scss/utilities";
 
-$utilities: map-merge(
-  $utilities,
-  (
-    "font-size":
-      map-merge(
-        map-get($utilities, "font-size"),
-        (
-          responsive: true,
-          values: (
-            1: calc(1.375rem + 1.5vw),
-            2: calc(1.25rem + 0.9vw),
-            3: calc(1.3rem + 0.6vw),
-            4: calc(1.275rem + 0.3vw),
-            5: 1.25rem,
-            6: 1rem,
-            7: 0.8rem,
-            8: 0.6rem,
-            9: 0.5rem,
-            10: 0.4rem,
-          ),
-        )
-      ),
-    "padding-y":
-      map-merge(
-        map-get($utilities, "padding-y"),
-        (
-          responsive: true,
-          values: (
-            1: 0.25rem,
-            2: 0.5rem,
-            3: 1rem,
-            4: 1.5rem,
-            5: 3rem,
-            6: 4rem,
-            7: 5rem,
-            8: 6rem,
-            9: 7rem,
-            10: 8rem,
-          ),
-        )
-      ),
-    "padding-top":
-      map-merge(
-        map-get($utilities, "padding-top"),
-        (
-          responsive: true,
-          values: (
-            1: 0.25rem,
-            2: 0.5rem,
-            3: 1rem,
-            4: 1.5rem,
-            5: 3rem,
-            6: 4rem,
-            7: 5rem,
-            8: 6rem,
-            9: 7rem,
-            10: 8rem,
-          ),
-        )
-      ),
-    "margin-top":
-      map-merge(
-        map-get($utilities, "margin-top"),
-        (
-          responsive: true,
-          values: (
-            1: 0.25rem,
-            2: 0.5rem,
-            3: 1rem,
-            4: 1.5rem,
-            5: 3rem,
-            6: 4rem,
-            7: 5rem,
-            8: 6rem,
-            9: 7rem,
-            10: 8rem,
-          ),
-        )
-      ),
-  )
-);
-
-@import "./node_modules/bootstrap/scss/utilities/api";
 $primary-bg-color: #1c1a19;
 $primary-font: "Crete Round", serif;
 $secondery-font: "Inter", san-serif;
@@ -139,7 +51,6 @@ button[disabled] {
 
 .navbar-brand {
   font-family: "Old London", sans-serif;
-  font-family: "Old London Alternate", sans-serif;
   color: #fff;
   padding: 0;
   margin: 0;
@@ -353,7 +264,7 @@ svg {
   background-color: $primary-bg-color;
   background-image: url("./assets/about-mobile-bg.svg");
   background-repeat: no-repeat;
-  background-position: 100% 39%;
+  background-position: 100% 33%;
 
   h1 {
     font-family: $primary-font;
@@ -376,6 +287,7 @@ svg {
     list-style: none;
     font-family: $secondery-font;
     color: $primary-font-color;
+    font-size: calc(0.85rem + 0.4vh);
   }
 
   .about-me-container {
@@ -493,9 +405,13 @@ svg {
   }
 
   .about-me {
-    background-position: 100% 35%;
+    background-position: 100% 25%;
     h1 {
       font-size: 5.4rem;
+    }
+
+    li {
+      font-size: calc(1.2rem + 0.5vh);
     }
     .about-me-container {
       padding: 10% 8% 27%;
@@ -507,6 +423,9 @@ svg {
   .hero {
     .hero-content {
       padding: 21.6% 0;
+      p {
+        font-size: calc(1.2rem + 0.5vh);
+      }
     }
     h1 {
       font-size: 3.5rem;
@@ -547,6 +466,10 @@ svg {
 @media (min-width: 992px) {
   .nav-custom a {
     border-bottom: none !important;
+  }
+
+  .navbar-brand {
+    font-size: 1.6rem;
   }
 
   .hero {
@@ -609,7 +532,7 @@ svg {
 
   .about-me {
     background-image: url("./assets/about-me-bg-desktop.svg");
-    background-position: 150% 40%;
+    background-position: 150% 20%;
   }
 
   .contact {
@@ -627,7 +550,7 @@ svg {
 @media (min-width: 1200px) {
   .hero {
     .hero-content {
-      padding: 10% 25% 20% 0%;
+      padding: 17% 25% 20% 0%;
       gap: 5rem !important;
       h1 {
         font-size: 4.5rem;
@@ -666,11 +589,12 @@ svg {
 
   .about-me {
     background-image: url("./assets/about-me-bg-desktop.svg");
-    background-position: 100% 30%;
+    background-position: 100% 20%;
     .about-me-container {
       padding: 7% 5%;
       p {
         max-width: 55%;
+        font-size: 1.1rem;
       }
     }
   }

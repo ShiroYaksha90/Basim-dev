@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Meera+Inimai&display=swap");
 
-utton:hover {
+button:hover {
   background-color: #fff5e1 !important;
   color: #f55800 !important;
   border: 1px solid #f55800 !important;
@@ -41,10 +41,15 @@ button[disabled] {
 
 .navbar-brand {
   font-family: "Old London", sans-serif;
-  font-family: "Old London Alternate", sans-serif;
   color: #fff;
+  padding: 0;
+  margin: 0;
 }
 .navbar-brand:hover {
+  color: #fff;
+}
+.navbar-brand:focus {
+  opacity: 0.5;
   color: #fff;
 }
 
@@ -60,11 +65,11 @@ button[disabled] {
   background-color: #1c1a19;
   background-image: url("./assets/hero-bg-mobile.svg");
   background-repeat: no-repeat;
-  background-position: 100% 125%;
+  background-position: 100% 110%;
   color: #fff;
 }
 .hero .hero-content {
-  padding: 39% 0;
+  padding: 43% 0;
 }
 .hero .hero-content h1 {
   font-family: "Crete Round", serif;
@@ -79,19 +84,23 @@ button[disabled] {
   list-style: none;
 }
 .hero .hero-content a {
-  color: #fff;
+  color: #cfcfcf;
+}
+
+svg {
+  width: calc(1.25rem + 1vh);
 }
 
 .portfolio h1 {
   font-family: "Crete Round", serif;
   color: #1c1a19;
-  font-size: 2.6rem;
+  font-size: 2.5rem;
   font-weight: 400;
 }
 .portfolio hr {
   width: 100%;
   background: #212121 !important;
-  height: 1px;
+  opacity: 1;
 }
 .portfolio .portfolio-title {
   width: 90%;
@@ -108,6 +117,7 @@ button[disabled] {
 .main-project .img-placeholder {
   background: #f28729;
   text-align: center;
+  width: 90%;
 }
 .main-project .img-placeholder img {
   width: 85%;
@@ -121,6 +131,9 @@ button[disabled] {
   font-weight: 700;
   color: #fff;
   background-color: #ff6b00;
+}
+.main-project li {
+  border-color: #8893a4 !important;
 }
 
 .card {
@@ -148,7 +161,7 @@ button[disabled] {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 5;
+  -webkit-line-clamp: 7;
   -webkit-box-orient: vertical;
 }
 .card .card-body .card-title,
@@ -168,8 +181,55 @@ button[disabled] {
   visibility: hidden;
 }
 
+.modal-dialog {
+  max-width: unset;
+  width: 95%;
+  height: 98%;
+}
+.modal-dialog .modal-content .modal-header {
+  border-bottom: none;
+}
+.modal-dialog .modal-content .modal-body {
+  overflow-y: auto;
+}
+.modal-dialog .modal-content .modal-body .main-project {
+  height: 100%;
+}
+.modal-dialog
+  .modal-content
+  .modal-body
+  .main-project
+  .modal-details-container {
+  height: 100%;
+}
+.modal-dialog .modal-content .modal-body .main-project .modal-details {
+  height: 100%;
+}
+.modal-dialog
+  .modal-content
+  .modal-body
+  .main-project
+  .modal-details-container
+  img {
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+  height: 65%;
+}
+.modal-dialog .modal-content .modal-btn {
+  font-family: "Inter", san-serif;
+  font-weight: 700;
+  color: #fff;
+  background-color: #ff6b00;
+}
+.modal-dialog .modal-content .modal-btn a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .about-me {
   background-color: #1c1a19;
+  background-image: url("./assets/about-mobile-bg.svg");
+  background-repeat: no-repeat;
+  background-position: 100% 39%;
 }
 .about-me h1 {
   font-family: "Crete Round", serif;
@@ -191,9 +251,6 @@ button[disabled] {
   color: #fff;
 }
 .about-me .about-me-container {
-  background-image: url("./assets/about-mobile-bg.svg");
-  background-repeat: no-repeat;
-  background-position: 100% 100%;
   padding: 20% 5% 45%;
 }
 
@@ -286,6 +343,12 @@ button[disabled] {
   .hero .hero-content p {
     font-size: 1rem;
   }
+  .modal-details-container img {
+    height: 70% !important;
+  }
+  .about-me {
+    background-position: 100% 35%;
+  }
   .about-me h1 {
     font-size: 5.4rem;
   }
@@ -293,11 +356,142 @@ button[disabled] {
     padding: 10% 8% 27%;
   }
 }
-@media (min-width: 786px) {
+@media (min-width: 768px) {
   .hero .hero-content {
     padding: 21.6% 0;
   }
   .hero h1 {
     font-size: 3.5rem;
+  }
+  .hero .hero-content > div {
+    width: 60% !important;
+  }
+  .hero .hero-social {
+    gap: 2rem !important;
+  }
+  svg {
+    width: calc(1rem + 0.5vw);
+  }
+  .portfolio h1 {
+    font-size: 3rem;
+  }
+  .main-project {
+    width: 90%;
+  }
+  .main-project .modal-details-container {
+    height: 100% !important;
+  }
+  .main-project .modal-details-container img {
+    width: 100%;
+    height: 100% !important;
+  }
+  .about-me .about-me-container {
+    padding: 15% 30% 8% 5%;
+  }
+}
+@media (min-width: 992px) {
+  .nav-custom a {
+    border-bottom: none !important;
+  }
+
+  .nav-brand {
+    font-size: 1.5rem;
+  }
+  .hero {
+    background-image: url(./assets/hero-bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
+  .hero .navbar {
+    padding: 0 6%;
+  }
+  .hero .hero-content {
+    padding: 20% 25% 25% 0%;
+    margin-left: 2%;
+    gap: 2rem !important;
+  }
+  .hero .hero-content div {
+    max-width: 45% !important;
+  }
+  .hero .hero-social {
+    gap: 1.5rem !important;
+  }
+  .portfolio .portfolio-title {
+    width: 100%;
+  }
+  .portfolio .portfolio-title h1 {
+    font-size: 2.5rem;
+  }
+  .portfolio .portfolio-title hr {
+    width: 59%;
+  }
+  .portfolio .main-project {
+    width: 100%;
+  }
+  .portfolio .main-project-details {
+    width: 80%;
+  }
+  .portfolio .column-large {
+    width: 31%;
+  }
+  .portfolio .modal-content {
+    height: 90%;
+  }
+  .portfolio .modal-content .modal-details-container {
+    height: 85% !important;
+  }
+  .portfolio .modal-content .modal-details-container img {
+    width: 65%;
+    height: 100% !important;
+    align-self: unset;
+  }
+  .about-me {
+    background-image: url("./assets/about-me-bg-desktop.svg");
+    background-position: 150% 40%;
+  }
+  .contact .contact-content h2 {
+    width: 40%;
+  }
+  .contact .contact-content div {
+    width: 60%;
+  }
+}
+@media (min-width: 1200px) {
+  .hero .hero-content {
+    padding: 10% 25% 20% 0%;
+    gap: 5rem !important;
+  }
+  .hero .hero-content h1 {
+    font-size: 4.5rem;
+  }
+  .portfolio .portfolio-title hr {
+    width: 66%;
+  }
+  .portfolio .main-project .img-placeholder {
+    width: 100%;
+  }
+  .portfolio .main-project .img-placeholder img {
+    height: 75%;
+  }
+  .portfolio .modal-content .modal-details-container img {
+    width: 70%;
+    align-self: unset;
+  }
+  .portfolio .modal-content .modal-details-container .modal-details {
+    width: 45%;
+  }
+  .about-me {
+    background-image: url("./assets/about-me-bg-desktop.svg");
+    background-position: 100% 30%;
+  }
+  .about-me .about-me-container {
+    padding: 7% 5%;
+  }
+  .about-me .about-me-container p {
+    max-width: 55%;
+  }
+  .contact h2 {
+    max-width: 40%;
+    font-size: 2.5em;
   }
 }
