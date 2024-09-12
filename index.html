@@ -173,12 +173,9 @@
         <div class="form-container d-flex flex-column px-3 px-sm-5 px-lg-0">
           <form action="https://formspree.io/f/mzbwkbey" method="post" id="form">
             <span id="email-error" class="text-danger"></span>
-            <input type="text" placeholder="Full name" id="name" class="form-control border-0 border-bottom mb-1 px-2">
-            <input                 type="email"
-            id="email"
-            size="30"
-            required placeholder="Email" class="form-control border-0 border-bottom p-2">
-            <textarea name="message" id="message" placeholder="Write me something" class="form-control border-0 fst-italic mt-3 px-2 py-3"               name="text-area"
+            <input type="text" placeholder="Full name" autocomplete="off" id="name" class="form-control border-0 border-bottom mb-1 px-2">
+            <input type="email" id="email" size="30" required placeholder="Email" autocomplete="off" class="form-control border-0 border-bottom p-2">
+            <textarea name="message" id="message" placeholder="Write me something" autocomplete="off" class="form-control border-0 fst-italic mt-3 px-2 py-3"               name="text-area"
             required
             spellcheck="false"
             maxlength="500" autocomplete="off"></textarea>
