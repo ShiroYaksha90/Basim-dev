@@ -120,6 +120,7 @@ svg {
 }
 .main-project .img-placeholder img {
   width: 85%;
+  height: 70%;
   box-shadow: 3px 3px 20px 1px #202020;
 }
 .main-project ul {
@@ -428,6 +429,10 @@ svg {
   }
   .portfolio .main-project {
     width: 100%;
+  }
+  .portfolio .main-project .img-placeholder img {
+    width: 80%;
+    height: 75%;
   }
   .portfolio .main-project-details {
     width: 80%;
