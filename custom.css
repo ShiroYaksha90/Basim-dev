@@ -255,6 +255,11 @@ svg {
 .stack-skills ul {
   padding: 0%;
 }
+.stack-skills #language,
+.stack-skills #framework,
+.stack-skills #skills {
+  font-size: calc(1.375rem + 1.5vw);
+}
 .stack-skills .language::before {
   content: " ";
   display: block;
@@ -263,8 +268,8 @@ svg {
   width: 0.5em;
   position: relative;
   transform: rotate(45deg);
-  top: 0.9em;
-  right: 2.6em;
+  top: 1em;
+  right: 3em;
 }
 .stack-skills .framework::before {
   content: " ";
@@ -273,8 +278,8 @@ svg {
   height: 0.5em;
   width: 0.5em;
   position: relative;
-  top: 0.9em;
-  right: 2.9em;
+  top: 1em;
+  right: 3em;
 }
 .stack-skills .skills::before {
   content: " ";
@@ -284,8 +289,8 @@ svg {
   width: 0.5em;
   position: relative;
   border-radius: 50%;
-  top: 0.9em;
-  right: 1.5em;
+  top: 1em;
+  right: 1.6em;
 }
 
 .contact h2 {
