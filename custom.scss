@@ -611,6 +611,20 @@ svg {
         font-size: 1.1rem;
       }
     }
+    .stack-skills {
+      .language::before {
+        top: 1.05em;
+        right: 3.4em;
+      }
+      .framework::before {
+        top: 1.05em;
+        right: 3.4em;
+      }
+      .skills::before {
+        top: 1.05em;
+        right: 1.8em;
+      }
+    }
   }
 
   .contact {
