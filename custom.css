@@ -294,6 +294,10 @@ svg {
   right: 1.6em;
 }
 
+.contact .contact-content {
+  margin-top: 9%;
+  margin-bottom: 9%;
+}
 .contact h2 {
   font-size: 2em;
   font-family: "Inter", san-serif;
@@ -456,10 +460,10 @@ svg {
     background-position: 150% 20%;
   }
   .contact .contact-content h2 {
-    width: 40%;
+    width: 50%;
   }
   .contact .contact-content div {
-    width: 60%;
+    width: 50%;
   }
 }
 @media (min-width: 1200px) {

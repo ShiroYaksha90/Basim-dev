@@ -350,6 +350,10 @@ svg {
 }
 
 .contact {
+  .contact-content {
+    margin-top: 9%;
+    margin-bottom: 9%;
+  }
   h2 {
     font-size: 2em;
     font-family: $secondery-font;
@@ -552,10 +556,10 @@ svg {
   .contact {
     .contact-content {
       h2 {
-        width: 40%;
+        width: 50%;
       }
       div {
-        width: 60%;
+        width: 50%;
       }
     }
   }
