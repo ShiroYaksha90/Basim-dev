@@ -39,7 +39,7 @@ const projectsCards = [
     cardId: "4",
     cardTitle: "Space Hub",
     cardDesc:
-      "Space Hub is a web app built with React and Redux, it fetches data from SpaceX API and Displays it.",
+      "Space Hub utilizes the SpaceX API to fetch information about the various spaceships details and allow visitors to join the various missions. It's built with the React framework to utilize the fluidity of SPA's and Redux for state management.",
     cardStack: ["React", "Redux", "CSS", "HTML"],
     cardImage: "assets/Space-Travelers-Hub.svg",
     cardbackgroundstyle:
