@@ -51,7 +51,7 @@ const projectsCards = [
     cardId: "5",
     cardTitle: "Hola",
     cardDesc:
-      "Hola is a full stack social app that allows users to sign up, log in, follow/unfollow other users, and create posts. It let's users activate thier account, change thier password via email using a hashed token.",
+      "Hola is a full stack social app that allows users to sign up, log in, follow/unfollow other users, and create posts. It let's users activate their account, change their password via email using a hashed token.",
     cardStack: ["RoR", "Postgres", "Bootstrap", "Hotwire"],
     cardImage: "assets/hola-app.svg",
     cardbackgroundstyle:
