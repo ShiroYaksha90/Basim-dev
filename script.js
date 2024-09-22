@@ -49,15 +49,15 @@ const projectsCards = [
   },
   {
     cardId: "5",
-    cardTitle: "Math Magician",
+    cardTitle: "Hola",
     cardDesc:
-      "This is a Single Page App (SPA) that allows users to: - Make simple calculations - Read a random quote",
-    cardStack: ["React", "API", "CSS"],
-    cardImage: "assets/math-magician.PNG",
+      "Hola is a full stack social app that allows users to sign up, log in, follow/unfollow other users, and create posts. It let's users activate thier account, change thier password via email using a hashed token.",
+    cardStack: ["RoR", "Postgres", "Bootstrap", "Hotwire"],
+    cardImage: "assets/hola-app.svg",
     cardbackgroundstyle:
-      "background:url(./assets/math-magician.PNG);background-size: 100% 100%;background-repeat: no-repeat;",
-    liveLink: "https://basim-math-magician.onrender.com/",
-    projLink: "https://github.com/ShiroYaksha90/math-magician",
+      "background:url(./assets/hola-app.svg);background-size: 100% 100%;background-repeat: no-repeat;",
+    liveLink: "https://hola-fvhk.onrender.com/",
+    projLink: "https://github.com/ShiroYaksha90/hola",
   },
   {
     cardId: "6",
