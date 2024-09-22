@@ -15,7 +15,7 @@ const projectsCards = [
     cardId: "2",
     cardTitle: "Foodo",
     cardDesc:
-      "Foodo is a full-cardStack application built with Ruby on Rails. It allows users to create, edit, and delete their own unique recipes. Users can also add ingredients, and follow step-by-step cooking instructions. The app features user authentication, and a responsive design for an optimal user experience",
+      "Foodo is a full-Stack application built with Ruby on Rails. It allows users to create, edit, and delete their own unique recipes. Users can also add ingredients, and follow step-by-step cooking instructions. The app features user authentication, and a responsive design for an optimal user experience",
     cardStack: ["RoR", "Bootstrap", "Rspec", "Postgres"],
     cardImage: "assets/foodo.png",
     cardbackgroundstyle:
