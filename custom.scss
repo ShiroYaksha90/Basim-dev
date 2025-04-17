@@ -277,11 +277,13 @@ svg {
     color: #fff;
   }
 
-  button {
+  .download-resume {
     font-family: $secondery-font;
     font-weight: 700;
     color: #fff;
     background-color: #ff6b00;
+    text-decoration: none;
+    text-align: center;
   }
 
   li {

@@ -230,11 +230,13 @@ svg {
 .about-me p {
   color: #fff;
 }
-.about-me button {
+.about-me .download-resume {
   font-family: "Inter", san-serif;
   font-weight: 700;
   color: #fff;
   background-color: #ff6b00;
+  text-decoration: none;
+  text-align: center;
 }
 .about-me li {
   list-style: none;

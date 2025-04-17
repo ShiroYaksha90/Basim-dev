@@ -192,8 +192,3 @@ window.addEventListener("DOMContentLoaded", () => {
   clearInput();
 });
 
-//download resume
-const downloadResume = document.querySelector(".download-resume");
-downloadResume.addEventListener("click", () => {
-  window.open("assets/Basim_Aljazaeri_resume.pdf");
-});
