@@ -5,9 +5,9 @@ const projectsCards = [
     cardDesc:
       "This project is about building a mobile web application to compare metrics from different countries. This project utilizes an API to retrieve information about countries and continents, which is then displayed through the use of React functions.",
     cardStack: ["React", "Redux", "CSS", "HTML"],
-    cardImage: "assets/my-world.PNG",
+    cardImage: "assets/my-world.svg",
     cardbackgroundstyle:
-      "background:url(./assets/my-world.PNG);background-size: 100% 100%;background-repeat: no-repeat;",
+      "background:url(./assets/my-world.svg);background-size: 100% 100%;background-repeat: no-repeat;",
     liveLink: "https://my-world-sems.onrender.com/",
     projLink: "https://github.com/ShiroYaksha90/react-redux-capstone",
   },
@@ -17,9 +17,9 @@ const projectsCards = [
     cardDesc:
       "Foodo is a full-Stack application built with Ruby on Rails. It allows users to create, edit, and delete their own unique recipes. Users can also add ingredients, and follow step-by-step cooking instructions. The app features user authentication, and a responsive design for an optimal user experience",
     cardStack: ["RoR", "Bootstrap", "Rspec", "Postgres"],
-    cardImage: "assets/foodo.png",
+    cardImage: "assets/foodo.svg",
     cardbackgroundstyle:
-      "background:url(./assets/foodo.png);background-size: 100% 100%;background-repeat: no-repeat;",
+      "background:url(./assets/foodo.svg);background-size: 100% 100%;background-repeat: no-repeat;",
     liveLink: "https://foodo.onrender.com/",
     projLink: "https://github.com/ShiroYaksha90/Foodo",
   },
@@ -29,9 +29,9 @@ const projectsCards = [
     cardDesc:
       "Simon game is an interactive fun web app based on the famous game Simon, the way that it works is that you can press any key to start and it will show you a tile that you have to click on. And as you go from level to level, the patterns get more and more complicated, and at some point you're going to screw up, and it's going to tell you that you’ve got it wrong and game is over, so you can press any key to restart the game.",
     cardStack: ["HTML", "CSS", "Javascript", "JQuery"],
-    cardImage: "assets/Simon-game.png",
+    cardImage: "assets/Simon-game.svg",
     cardbackgroundstyle:
-      "background:url(./assets/Simon-game.png);background-size: 100% 100%;background-repeat: no-repeat;",
+      "background:url(./assets/Simon-game.svg);background-size: 100% 100%;background-repeat: no-repeat;",
     liveLink: "https://shiroyaksha90.github.io/Simon-game/",
     projLink: "https://github.com/ShiroYaksha90/Simon-game",
   },
@@ -65,9 +65,9 @@ const projectsCards = [
     cardDesc:
       "Go Movies is a simple web app that fetches and stores data in multiple APIs and displays them, it uses modular architecture as well as webpack.",
     cardStack: ["Javascript", "Webpack", "CSS"],
-    cardImage: "assets/go-movie.PNG",
+    cardImage: "assets/go-movie.svg",
     cardbackgroundstyle:
-      "background:url(./assets/go-movie.PNG); background-size: 100% 100%;background-repeat: no-repeat;",
+      "background:url(./assets/go-movie.svg); background-size: 100% 100%;background-repeat: no-repeat;",
     liveLink: "https://dheerajsachdeva.github.io/capstone2/dist/",
     projLink: "https://github.com/ShiroYaksha90/javascript-capstone",
   },
